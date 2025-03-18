@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Didact Gothic', sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3 {
+    color: #1D428A;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #1D428A;
+    
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a {
+    font-size: 20px;
+    
+    font-weight: 400;
+    text-decoration: none;
+
+    color: #ffffff;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.profile header {
+    text-align: center  ;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile img {
+    width: 200px;
+}
+
+.Arena {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    
+    padding: 20px;
+}
+
+.top {
+    font-size: 2px;
+    padding: 60px;
+    background-color: rgb(214, 214, 214);
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+
+    gap: 2rem;
+    justify-content: center;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav {
+    background-color: #1D428A;
+    padding: 5px;
+
+    position: sticky;
+    top: 0;
+}
+
+main {
+    padding: 20px;
+    font-size: 17px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#content {
+    flex: 5;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+aside {
+    flex: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+header {
+    display: inline;
+}
+
+header p {
+    font-size: 20px;
+    color: #1D428A;
+}
+
+section .social-media li {
+    list-style-type: none;
+}
+
+section .social-media li a {
+    text-decoration: none;
+    color: #000000;
+    transition: all 0.1s ease-in-out;
+}
+
+section .social-media li a:hover {
+    color: #ff3c00;
+}
+
+@media screen and (max-width: 1200px) {
+   main {
+         flex-flow: column nowrap;
+   }
+
+   main aside {
+    align-self: center;
+   }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
+}
+
+header .top img {
+    flex: 1;
+    display: flex;
+    width: 740px;
+    min-width: 520px;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    header .top img {
+        width: 100%;
+    }
+}
